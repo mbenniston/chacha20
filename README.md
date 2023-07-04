@@ -16,10 +16,10 @@ required .c/.h files into your project. `/src` contains these files.
 ## Example 
 
 ```c
-	chacha_stream_t stream;
-	chacha_stream_init(&stream, key, start_block_index, nonce);
+chacha_stream_t stream;
+chacha_stream_init(&stream, key, start_block_index, nonce);
 
-    chacha_stream_encrypt(&stream, buffer, buffer_length);
+chacha_stream_encrypt(&stream, buffer, buffer_length);
 ```
 See `/example` directory for full example.
 
