@@ -8,6 +8,7 @@ extern "C"
 
 #ifndef CHACHA_PRINT_H
 #define CHACHA_PRINT_H
+#include <stddef.h>
 #include <inttypes.h>
 
     /// @brief Prints the chacha matrix encoded as 4x4 32-bit words

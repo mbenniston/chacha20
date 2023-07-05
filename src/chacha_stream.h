@@ -7,7 +7,7 @@ extern "C" {
 
 #ifndef CHACHA_STREAM_H
 #define CHACHA_STREAM_H
-
+#include <stddef.h>
 #include "chacha.h"
 
 /// @brief Holds state of the ChaCha stream 

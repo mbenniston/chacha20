@@ -111,11 +111,11 @@ static inline uint32_t chacha_bytes_to_uint32(uint8_t a, uint8_t b, uint8_t c, u
     return ((uint32_t)a | ((uint32_t)b << 8) | ((uint32_t)c << 16) | ((uint32_t)d << 24));
 }
 
-extern uint32_t chacha_byte_array_to_uint32(const uint8_t* bytes) { 
+uint32_t chacha_byte_array_to_uint32(const uint8_t* bytes) { 
     return bytes[0] | (uint32_t)bytes[1] << 8 | (uint32_t)bytes[2] << 16 | (uint32_t)bytes[3] << 24;
 }
 
-extern void chacha_uint32_to_bytes_array(uint8_t* bytes, uint32_t value) { 
+void chacha_uint32_to_bytes_array(uint8_t* bytes, uint32_t value) { 
     bytes[0] = value & 0xFF;
     bytes[1] = (value & 0xFF00) >> 8;
     bytes[2] = (value & 0xFF0000) >> 16;

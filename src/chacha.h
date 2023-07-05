@@ -45,12 +45,12 @@ void chacha20_block(const uint32_t* matrix, uint8_t* output);
 /// @brief Decodes a given integer encoded in little endian 
 /// @param bytes The integer represented as bytes encoded as little endian
 /// @return An integer representing the value of the bytes interpreted as a little endian number
-inline uint32_t chacha_byte_array_to_uint32(const uint8_t* bytes);
+uint32_t chacha_byte_array_to_uint32(const uint8_t* bytes);
 
 /// @brief Encodes a given integer into a little endian byte array 
 /// @param bytes A pointer to where the integer will be encoded to, must be 4 bytes long
 /// @param value The integer to be encoded
-inline void chacha_uint32_to_bytes_array(uint8_t* bytes, uint32_t value);
+void chacha_uint32_to_bytes_array(uint8_t* bytes, uint32_t value);
 
 #endif // CHACHA_H
 
